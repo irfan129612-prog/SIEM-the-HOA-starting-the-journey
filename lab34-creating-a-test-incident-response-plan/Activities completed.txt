@@ -1,0 +1,11 @@
+No technical commands were required for this lab.
+
+Activities completed:
+
+- Defined Incident Response Team Roles
+- Assigned Responsibilities
+- Established Severity Levels
+- Created Escalation Procedures
+- Conducted Tabletop Exercise
+- Documented Incident Response Workflow
+- Recorded Lessons Learned
