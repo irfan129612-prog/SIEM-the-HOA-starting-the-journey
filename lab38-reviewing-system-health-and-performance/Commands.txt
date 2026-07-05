@@ -1,0 +1,68 @@
+# Create Lab Directory
+
+mkdir ~/system-health-lab
+
+cd ~/system-health-lab
+
+# Check CPU Information
+
+lscpu
+
+# Check Memory Usage
+
+free -h
+
+# Check Disk Usage
+
+df -h
+
+# Check Running Processes
+
+top -b -n 1 | head -20
+
+# Check System Load
+
+uptime
+
+# Create Sample Ingestion Metrics
+
+cat > ingestion.log << EOF
+logs_ingested=120
+logs_ingested=145
+logs_ingested=160
+logs_ingested=190
+EOF
+
+# View Ingestion Data
+
+cat ingestion.log
+
+# Calculate Average Ingestion Rate
+
+awk -F= '{sum+=$2} END {print "Average Logs:",sum/NR}' ingestion.log
+
+# Check System Logs for Errors
+
+grep -i "error" /var/log/syslog
+
+# Check Warnings
+
+grep -i "warning" /var/log/syslog
+
+# Create Health Report
+
+echo "System Health Report" > health_report.txt
+
+free -h >> health_report.txt
+
+df -h >> health_report.txt
+
+uptime >> health_report.txt
+
+# View Report
+
+cat health_report.txt
+
+# Verify Files
+
+ls -lh
