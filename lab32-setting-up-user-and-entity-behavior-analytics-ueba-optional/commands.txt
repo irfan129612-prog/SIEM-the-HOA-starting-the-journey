@@ -1,0 +1,57 @@
+# Verify Services
+
+sudo systemctl status elasticsearch
+
+sudo systemctl status kibana
+
+sudo systemctl status filebeat
+
+sudo systemctl status auditbeat
+
+# Verify Elasticsearch Connectivity
+
+curl http://localhost:9200
+
+# Create Test Users
+
+sudo useradd analyst1
+
+sudo useradd analyst2
+
+# Generate User Activity
+
+sudo su - analyst1
+
+exit
+
+sudo su - analyst2
+
+exit
+
+# Simulate Failed Login
+
+su fakeuser
+
+# Check Filebeat Logs
+
+sudo journalctl -u filebeat -n 20
+
+# Check Auditbeat Logs
+
+sudo journalctl -u auditbeat -n 20
+
+# Open Kibana
+
+http://localhost:5601
+
+# Navigate
+
+Discover
+
+# Review Fields
+
+user.name
+host.name
+event.action
+source.ip
+@timestamp
