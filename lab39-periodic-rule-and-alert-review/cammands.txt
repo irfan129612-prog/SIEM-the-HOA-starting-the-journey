@@ -1,0 +1,46 @@
+# Create Lab Directory
+
+mkdir ~/rule-review-lab
+
+cd ~/rule-review-lab
+
+# Create Sample Rule List
+
+cat > active_rules.txt << EOF
+RULE-001 Failed Login Detection
+RULE-002 Port Scan Detection
+RULE-003 Malware Alert
+RULE-004 Legacy FTP Access
+EOF
+
+# View Active Rules
+
+cat active_rules.txt
+
+# Select Rule for Review
+
+grep "RULE-004" active_rules.txt
+
+# Create Rule Review Log
+
+cat > rule_review_log.txt << EOF
+Rule ID: RULE-004
+Description: Legacy FTP Access Detection
+Last Triggered: 2025-01-10
+Decision: Retired
+Comments: FTP service no longer used in environment.
+EOF
+
+# View Review Log
+
+cat rule_review_log.txt
+
+# Generate Review Report
+
+echo "Periodic Rule Review Completed Successfully" > review_report.txt
+
+cat review_report.txt
+
+# Verify Files
+
+ls -lh
