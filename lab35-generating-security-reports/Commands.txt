@@ -1,0 +1,70 @@
+# Update Package Repository
+
+sudo apt-get update
+
+# Search for OSSEC Package
+
+sudo apt-cache search ossec
+
+# Attempt OSSEC Installation
+
+sudo apt-get install ossec-hids
+
+# Create Lab Directory
+
+mkdir ~/security-report-lab
+
+cd ~/security-report-lab
+
+# Create Sample Security Events Log
+
+cat > security_events.log << EOF
+INFO User login successful
+WARNING Multiple failed login attempts
+CRITICAL Unauthorized access detected
+ERROR Firewall service stopped
+CRITICAL Malware activity detected
+INFO Backup completed
+EOF
+
+# View Security Events
+
+cat security_events.log
+
+# Extract Critical Events
+
+grep "CRITICAL" security_events.log
+
+# Extract Error Events
+
+grep -i "error" security_events.log
+
+# Generate Security Report
+
+echo "Security Report Summary" > summary.log
+
+grep -E "CRITICAL|ERROR|WARNING" security_events.log >> summary.log
+
+# View Report
+
+cat summary.log
+
+# Install Pandoc
+
+sudo apt install pandoc -y
+
+# Export Report to PDF
+
+pandoc summary.log -o security_report.pdf
+
+# Create CSV Export Script
+
+nano report.py
+
+# Run CSV Export Script
+
+python3 report.py
+
+# Verify Generated Files
+
+ls -lh
