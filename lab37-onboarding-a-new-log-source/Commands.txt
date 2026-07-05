@@ -1,0 +1,46 @@
+# Update System
+
+sudo apt-get update
+
+# Create Lab Directory
+
+mkdir ~/log-source-lab
+
+cd ~/log-source-lab
+
+# Create Sample Cloud Log Source
+
+cat > cloud_app.log << EOF
+{"source":"AWS CloudWatch","event":"Login Success","user":"admin","timestamp":"2026-06-19T10:00:00Z"}
+{"source":"AWS CloudWatch","event":"Failed Login","user":"test","timestamp":"2026-06-19T10:05:00Z"}
+EOF
+
+# View Logs
+
+cat cloud_app.log
+
+# Simulate Agent Installation
+
+sudo apt-get install wazuh-agent
+
+# Create Parsed Output
+
+grep "event" cloud_app.log
+
+# Extract Failed Login Events
+
+grep "Failed Login" cloud_app.log
+
+# Validate Log Source
+
+cat cloud_app.log
+
+# Generate Validation Report
+
+echo "Log Source Successfully Onboarded" > validation_report.txt
+
+cat validation_report.txt
+
+# Verify Files
+
+ls -lh
