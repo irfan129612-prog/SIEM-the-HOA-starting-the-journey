@@ -1,0 +1,75 @@
+# Create Lab Directory
+
+mkdir ~/siem-health-check
+
+cd ~/siem-health-check
+
+# Create Data Source Inventory
+
+cat > data_sources.txt << EOF
+Linux System Logs
+Authentication Logs
+Security Alerts
+Cloud Application Logs
+Network Events
+EOF
+
+# Review Data Sources
+
+cat data_sources.txt
+
+# Create Alert Review Notes
+
+cat > alert_review.txt << EOF
+Failed Login Detection
+Port Scan Detection
+Malware Alerts
+Suspicious Authentication Events
+EOF
+
+# Review Alerts
+
+cat alert_review.txt
+
+# Create Dashboard Review Notes
+
+cat > dashboard_review.txt << EOF
+Security Overview Dashboard
+Authentication Dashboard
+Incident Dashboard
+System Health Dashboard
+EOF
+
+# Review Dashboards
+
+cat dashboard_review.txt
+
+# Create Improvement Plan
+
+cat > improvements.txt << EOF
+1. Scalability
+2. Enhanced Log Management
+3. Advanced Threat Intelligence
+EOF
+
+cat improvements.txt
+
+# Create SIEM Roadmap
+
+cat > roadmap.txt << EOF
+Phase 1 (0-3 Months): Alert Optimization
+Phase 2 (3-6 Months): Infrastructure Scaling
+Phase 3 (6-12 Months): Threat Intelligence Integration
+EOF
+
+cat roadmap.txt
+
+# Generate Final Assessment Report
+
+echo "Final SIEM Health Check Completed Successfully" > final_report.txt
+
+cat final_report.txt
+
+# Verify Files
+
+ls -lh
