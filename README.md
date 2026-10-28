@@ -26,6 +26,10 @@
 
 ---
 
+## 📑 Verified Lab Index
+
+**[Browse the actual lab files →](LAB_INDEX.md)** — links are generated from existing repository paths.
+
 ## 📚 Lab and Project Documentation
 
 This repository documents my hands-on **Security Information and Event Management (SIEM)** learning journey through a series of practical labs. The labs focus on deploying, configuring, and managing an enterprise SIEM environment using the **Elastic Stack (Elasticsearch, Logstash, Kibana)** while integrating multiple log sources, security monitoring tools, and detection techniques.
