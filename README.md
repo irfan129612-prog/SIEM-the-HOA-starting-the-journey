@@ -1,4 +1,32 @@
-# 🛡️ Security Information and Event Management (SIEM) The HOA starting the journey
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&height=140&color=0:0F172A,50:155E75,100:0EA5E9&text=SIEM%20Operations%20Labs&fontColor=FFFFFF&fontSize=25&desc=Log%20analysis%2C%20monitoring%20and%20incident%20investigation&descSize=13&descAlignY=76" alt="SIEM Operations Labs" width="100%"/>
+
+<h2>SIEM Operations Labs</h2>
+**Hands-on SIEM documentation covering the security monitoring workflow.**
+
+[🏠 Main Profile](https://github.com/irfan129612-prog) · [📂 All Repositories](https://github.com/irfan129612-prog?tab=repositories) · [🔗 LinkedIn](https://www.linkedin.com/in/irfan1296/)
+</div>
+
+---
+
+## 🔎 Repository Overview
+
+| **Focus** | SIEM Operations Labs |
+| :--- | :--- |
+| **Topics / Tools** | Log analysis, monitoring and incident investigation |
+| **Portfolio type** | Technical labs and project documentation |
+| **Maintainer** | [Irfan Ahmed](https://github.com/irfan129612-prog) |
+
+### Quick Navigation
+- [Lab and project documentation](#-lab-and-project-documentation)
+- [Documentation standard](#-documentation-standard)
+- [Contact](#-contact)
+
+> **Evidence note:** Documented activities and results should be evaluated from actual lab files and screenshots. Never expose credentials, real tokens, personal data or unauthorized security targets.
+
+---
+
+## 📚 Lab and Project Documentation
 
 This repository documents my hands-on **Security Information and Event Management (SIEM)** learning journey through a series of practical labs. The labs focus on deploying, configuring, and managing an enterprise SIEM environment using the **Elastic Stack (Elasticsearch, Logstash, Kibana)** while integrating multiple log sources, security monitoring tools, and detection techniques.
 
@@ -143,3 +171,15 @@ Aspiring SOC Analyst | SIEM Enthusiast | Blue Team Learner | Cybersecurity Stude
 ---
 
 ⭐ If you found this repository useful, consider giving it a **Star**.
+
+---
+
+## 🗂 Documentation Standard
+
+For each lab, the recommended structure is **objective → prerequisites → implementation → verification → troubleshooting → lessons learned**. Add sanitized screenshots, code, configuration, datasets and expected output where available. This is an ongoing documentation standard, not a claim that every existing lab has all these components.
+
+## 🤝 Contact
+
+Maintained by **[Irfan Ahmed](https://github.com/irfan129612-prog)** · [LinkedIn](https://www.linkedin.com/in/irfan1296/)
+
+<p align="center"><sub>Learn → Implement → Verify → Document → Improve</sub></p>
