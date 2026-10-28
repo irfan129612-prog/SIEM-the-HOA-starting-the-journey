@@ -122,3 +122,10 @@ Search Query
 rule.id:100100
 
 The alert was successfully displayed in the Wazuh web interface.
+
+
+---
+
+### 📚 Portfolio Navigation
+
+[← All Labs](../LAB_INDEX.md) · [Repository Overview](../README.md) · [Main Portfolio](https://github.com/irfan129612-prog)
